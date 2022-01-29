@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Ikanesia</title>
+		<title>MFish Store</title>
 		<link rel="stylesheet" href="../_asset/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../_asset/css/simple-sidebar.css">
 		<link rel="stylesheet" href="../_asset/font-awesome/css/font-awesome.min.css">

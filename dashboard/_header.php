@@ -28,13 +28,13 @@
 					<a href="#"><img src="../img/logo.png" width="100px"></a>
                 </li>
                 <li>
-                    <a href="<?=base_url('dashboard')?>"><i class="fa fa-home" aria-hidden="true">Dashboard</i></a>
+                    <a href="<?=base_url('dashboard')?>"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('ikan')?>"><i class="fa fa-odnoklassniki" aria-hidden="true">Data Ikan</i></a>
+                    <a href="<?=base_url('ikan')?>"><i class="fa fa-odnoklassniki" aria-hidden="true"></i> Data Ikan</a>
                 </li>                
                 <li>
-                    <a href="<?=base_url('auth/logout.php')?>"><i class="fa fa-power-off" aria-hidden="true">Logout</i></a>
+                    <a href="<?=base_url('auth/logout.php')?>"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</a>
                 </li>
             </ul>
 		</div>

@@ -15,13 +15,13 @@
     <meta name="author" content="">
 	<link rel="stylesheet" href="../_asset/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../_asset/style.css">
-    <title>Login - Ikanesia</title>
+    <title>Login - MFishStore</title>
 </head>
 
 <body class="text-center">
 	<form class="form-signin" action="" method="post">   
 					<img class="mb-3" src="../img/logo.png" width="72" height="72">
-					<h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+					<h1 class="h3 mb-3 font-weight-normal">Silahkan LogIn</h1>
     <?php
     	if(isset($_POST['login'])) {
     		$user = trim(mysqli_real_escape_string($con, $_POST['user']));
@@ -47,7 +47,7 @@
 					<input type="text" name="user" class="form-control" placeholder="Username" required autofocus> 
     				<input type="password" name="pass" class="form-control" placeholder="Password" required>
 					<button class="btn btn-lg btn-primary btn-block mt-2" name="login" type="submit">Sign in</button>
-					<p class="mt-5 mb-3 text-muted">© 2021-2022 <a href="<?php echo base_url()?>">Ikanesia</a></p>
+					<p class="mt-5 mb-3 text-muted">© 2021-2022 <a href="<?php echo base_url()?>">MFishStore</a></p>
     			</form>
 <script src="../_asset/js/jquery.js"></script>
 <script src="../_asset/js/bootstrap.min.js"></script>

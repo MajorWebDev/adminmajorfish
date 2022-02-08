@@ -40,7 +40,7 @@
 						    <div class="alert alert-success aler-dismissable" role="alert">
 						        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 						        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-						        <strong>Sukses!</strong> <br> Data Berhasil ditambahkan
+						        <strong>Sukses!</strong> <br> Data Berhasil diedit
 						    </div>
 					    </div>
 				    </div>							

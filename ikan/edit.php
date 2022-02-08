@@ -81,7 +81,7 @@
                                     <option value="7">Crown Tail</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 1) { ?>
+                                } elseif ($data['kategori'] == 1) { ?>
                                     <option value="1">Plakat</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="2">Giant</option>
@@ -92,7 +92,7 @@
                                     <option value="7">Crown Tail</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 2) { ?>
+                                } elseif ($data['kategori'] == 2) { ?>
                                     <option value="2">Giant</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
@@ -103,7 +103,7 @@
                                     <option value="7">Crown Tail</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 3) { ?>
+                                } elseif ($data['kategori'] == 3) { ?>
                                     <option value="3">Dumbo</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
@@ -114,7 +114,7 @@
                                     <option value="7">Crown Tail</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 4) { ?>
+                                } elseif ($data['kategori'] == 4) { ?>
                                     <option value="4">Ear</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
@@ -125,7 +125,7 @@
                                     <option value="7">Crown Tail</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 5) { ?>
+                                } elseif ($data['kategori'] == 5) { ?>
                                     <option value="5">Slayer</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
@@ -136,7 +136,7 @@
                                     <option value="7">Crown Tail</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 6) { ?>
+                                } elseif ($data['kategori'] == 6) { ?>
                                     <option value="6">Alien</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
@@ -147,7 +147,7 @@
                                     <option value="7">Crown Tail</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 7) { ?>
+                                } elseif ($data['kategori'] == 7) { ?>
                                     <option value="7">Crown Tail</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
@@ -158,7 +158,7 @@
                                     <option value="6">Alien</option>
                                     <option value="8">Double Tail</option>
                                     <option value="9">Fancy</option> <?php
-                                } elseif ($data['kategori'] === 8) { ?>
+                                } elseif ($data['kategori'] == 8) { ?>
                                     <option value="8">Double Tail</option>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
@@ -190,12 +190,8 @@
                     </div>
                     <div class="form-group">
                         <label for="ikan">Deskripsi</label>
-                        <textarea type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?=$data['deskripsi']?>" required></textarea>
+                        <textarea type="text" class="form-control" name="deskripsi" id="deskripsi" required><?=$data['deskripsi']?></textarea>
                     </div> 
-                    <div class="form-group">
-                        <label for="ikan">Deskripsi</label>
-                        <input type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?=$data['deskripsi']?>" required>
-                    </div>
                     <div class="form-group">
                         <label for="ikan">Harga</label>
                         <input type="text" class="form-control" name="harga" id="harga" value="<?=$data['harga']?>" required>

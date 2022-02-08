@@ -70,7 +70,7 @@
                         <label for="ikan">Kategori</label>
                         <select name="kategori" class="form-control">
                             <?php
-                                if ($data['kategori'] === 0) { ?>
+                                if ($data['kategori'] == 0) { ?>
                                     <option value="0">Halfmoon</option>
                                     <option value="1">Plakat</option>
                                     <option value="2">Giant</option>
@@ -192,6 +192,10 @@
                         <label for="ikan">Deskripsi</label>
                         <textarea type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?=$data['deskripsi']?>" required></textarea>
                     </div> 
+                    <div class="form-group">
+                        <label for="ikan">Deskripsi</label>
+                        <input type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?=$data['deskripsi']?>" required>
+                    </div>
                     <div class="form-group">
                         <label for="ikan">Harga</label>
                         <input type="text" class="form-control" name="harga" id="harga" value="<?=$data['harga']?>" required>

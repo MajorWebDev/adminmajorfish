@@ -57,9 +57,9 @@
             <div class="col-lg-6 col-lg-offset-3">
                 <form action="proses.php" enctype="multipart/form-data" method="post">
                     <div class="form-group">
-                        <label for="ikan">Gambar Ikan</label>
+                        <label for="ikan">Gambar Ikan</label> <br>
                         <img src="../_asset/upload_gambar/<?=$data['gambar']?>" width="50px" height="50px">
-                        <input type="file" name="gambar" required class="form-control-file">
+                        <input type="file" name="gambar" class="form-control-file">
                         <em>Abaikan jika tidak merubah gambar produk</em>
                     </div>
                     <div class="form-group">

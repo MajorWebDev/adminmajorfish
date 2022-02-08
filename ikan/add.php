@@ -3,7 +3,7 @@
         <h1>Ikan</h1>
         <h4>
             <small>Tambah Data Ikan</small>
-            <div class="float-right" style="margin-bottom :40px;">
+            <div class="float-right">
                 <a href="data.php" class="btn btn-warning btn-xs"><i class="fa fa-chevron-left"></i> Kembali</a>
             </div>
         </h4>
@@ -31,7 +31,7 @@
             }
         ?>
 
-        <div class="row">
+        <div class="row"  style="margin-top :40px;">
             <div class="col-lg-6 col-lg-offset-3">
                 <form action="proses.php" enctype="multipart/form-data" method="post">
                     <div class="form-group">

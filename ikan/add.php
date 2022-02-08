@@ -23,15 +23,27 @@
         <?php
                 }elseif($_GET['alert']=="gagal_ukuran"){
         ?>
-                    <button type="button" data-dismiss="alert" aria-hidden="true">Close X</button>
-                    <h4>Peringatan !</h4>
-                    Ukuran File terlalu Besar							
+                    <div class="row">
+					    <div class="col-lg-12 col-lg-offset-3">
+						    <div class="alert alert-danger aler-dismissable" role="alert">
+						        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+						        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						        <strong>Peringatan!</strong> <br> Ukuran File Terlalu Besar
+						    </div>
+					    </div>
+				    </div>							
         <?php
                 }elseif($_GET['alert']=="berhasil"){
         ?>
-                    <button type="button" data-dismiss="alert" aria-hidden="true">Close X</button>
-                    <h4>Success</h4>
-                    Berhasil Disimpan								
+                    <div class="row">
+					    <div class="col-lg-12 col-lg-offset-3">
+						    <div class="alert alert-success aler-dismissable" role="alert">
+						        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+						        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						        <strong>Sukses!</strong> <br> Data Berhasil ditambahkan
+						    </div>
+					    </div>
+				    </div>							
         <?php
                 }
             }

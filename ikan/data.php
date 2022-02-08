@@ -111,11 +111,14 @@
                         </ul>
                     </div>
                     <?php            
-                } else { 
-                    echo "<div class=\"float-left\">";
-                    $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
-                    echo "Data Hasil Pencarian : <b>$jml</b>";
-                    echo "<div>";            
+                } else { ?>
+                    <div class="float-left">
+                        <?php
+                            $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
+                            echo "Data Hasil Pencarian : <b>$jml</b>";
+                        ?>     
+                    </div>
+                <?php
                 }
             ?>
         </div>

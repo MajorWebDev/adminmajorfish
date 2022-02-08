@@ -87,36 +87,38 @@
                 </tbody>
             </table>
         </div>
-        <?php
-            if(@$_POST['pencarian'] == '') { ?>
-                <div style="float:left;">
-                    <?php
-                        $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
-                        echo "Jumlah Data : <b>$jml</b>";                
-                    ?>
-                </div>
-                <div style="float:right;">
-                    <ul class="pagination" style="margin:0">
+        <div class="row clearfix">
+            <?php
+                if(@$_POST['pencarian'] == '') { ?>
+                    <div style="float:left;">
                         <?php
-                            $jml_hal = ceil($jml / $batas);
-                            for ($i=1; $i <= $jml_hal; $i++) {
-                                if($i != $hal) {
-                                    echo "<li class=\"page-item\"><a class=\"page-link\" href=\"?hal=$i\">$i</a></li>";
-                                } else {
-                                    echo "<li class=\"page-item\"><a class=\"page-link\">$i</a></li>";
-                                }
-                            }
+                            $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
+                            echo "Jumlah Data : <b>$jml</b>";                
                         ?>
-                    </ul>
-                </div>
-                <?php            
-            } else { 
-                echo "<div style=\"float:left;\">";
-                $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
-                echo "Data Hasil Pencarian : <b>$jml</b>";
-                echo "<div>";            
-            }
+                    </div>
+                    <div style="float:right;">
+                        <ul class="pagination" style="margin:0">
+                            <?php
+                                $jml_hal = ceil($jml / $batas);
+                                for ($i=1; $i <= $jml_hal; $i++) {
+                                    if($i != $hal) {
+                                        echo "<li class=\"page-item\"><a class=\"page-link\" href=\"?hal=$i\">$i</a></li>";
+                                    } else {
+                                        echo "<li class=\"page-item\"><a class=\"page-link\">$i</a></li>";
+                                    }
+                                }
+                            ?>
+                        </ul>
+                    </div>
+                    <?php            
+                } else { 
+                    echo "<div style=\"float:left;\">";
+                    $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
+                    echo "Data Hasil Pencarian : <b>$jml</b>";
+                    echo "<div>";            
+                }
             ?>
+        </div>
     </div>
-    <div class="float-left"><a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 <?php include_once('../dashboard/_footer.php'); ?>

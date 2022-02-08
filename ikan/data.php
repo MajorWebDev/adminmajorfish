@@ -90,13 +90,13 @@
         <div class="row clearfix">
             <?php
                 if(@$_POST['pencarian'] == '') { ?>
-                    <div style="float:left;">
+                    <div class="float-left">
                         <?php
                             $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
                             echo "Jumlah Data : <b>$jml</b>";                
                         ?>
                     </div>
-                    <div style="float:right;">
+                    <div class="float-right">
                         <ul class="pagination" style="margin:0">
                             <?php
                                 $jml_hal = ceil($jml / $batas);
@@ -112,7 +112,7 @@
                     </div>
                     <?php            
                 } else { 
-                    echo "<div style=\"float:left;\">";
+                    echo "<div class=\"float-left\">";
                     $jml = mysqli_num_rows(mysqli_query($con, $queryJml));
                     echo "Data Hasil Pencarian : <b>$jml</b>";
                     echo "<div>";            

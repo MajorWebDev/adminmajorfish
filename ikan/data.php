@@ -118,4 +118,5 @@
             }
             ?>
     </div>
+    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 <?php include_once('../dashboard/_footer.php'); ?>

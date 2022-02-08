@@ -3,7 +3,7 @@
         <h1>Ikan</h1>
         <h4>
             <small>Tambah Data Ikan</small>
-            <div class="float-right">
+            <div class="float-right" style="margin-bottom :40px;">
                 <a href="data.php" class="btn btn-warning btn-xs"><i class="fa fa-chevron-left"></i> Kembali</a>
             </div>
         </h4>

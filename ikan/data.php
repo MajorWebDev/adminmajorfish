@@ -87,7 +87,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="row clearfix">
+        <div class="clearfix">
             <?php
                 if(@$_POST['pencarian'] == '') { ?>
                     <div class="float-left">

@@ -11,9 +11,15 @@
             if(isset($_GET['alert'])){
                 if($_GET['alert']=='gagal_ekstensi'){
         ?>
-                    <button type="button" data-dismiss="alert" aria-hidden="true">Close X</button>
-                    <h4>Peringatan !</h4>
-                    Ekstensi Tidak Diperbolehkan							
+                    <div class="row">
+					    <div class="col-lg-12 col-lg-offset-3">
+						    <div class="alert alert-danger aler-dismissable" role="alert">
+						        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+						        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						        <strong>Peringatan!</strong> <br> Ekstensi Tidak Diperbolehkan
+						    </div>
+					    </div>
+				    </div>							
         <?php
                 }elseif($_GET['alert']=="gagal_ukuran"){
         ?>
@@ -84,4 +90,6 @@
         </div>
     </div>
     <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+<script src="../_asset/js/jquery.js"></script>
+<script src="../_asset/js/bootstrap.min.js"></script>
 <?php include_once('../dashboard/_footer.php'); ?>

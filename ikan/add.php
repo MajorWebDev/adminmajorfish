@@ -36,11 +36,11 @@
                 <form action="proses.php" enctype="multipart/form-data" method="post">
                     <div class="form-group">
                         <label for="ikan">Gambar Ikan</label>
-                        <input type="file" name="gambar" required>
+                        <input type="file" name="gambar" required class="form-control-file">
                     </div>
                     <div class="form-group">
                         <label for="ikan">Kategori</label>
-                        <select name="kategori">
+                        <select name="kategori" class="form-control">
                             <option value="0">Halfmoon</option>
                             <option value="1">Plakat</option>
                             <option value="2">Giant</option>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="form-group">
                         <label for="ikan">Deskripsi</label>
-                        <input type="text" name="deskripsi" id="deskripsi" class="form-control" required>
+                        <textarea type="text" name="deskripsi" id="deskripsi" class="form-control" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="ikan">Harga</label>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="form-group">
                         <label for="ikan">Status</label>
-                        <select name="status">
+                        <select name="status" class="form-control">
                             <option value="Ada">Ada</option>
                             <option value="Habis">Habis</option>
                         </select>

@@ -54,7 +54,7 @@
                 <form action="proses.php" enctype="multipart/form-data" method="post">
                     <div class="form-group">
                         <label for="blog">Gambar</label>
-                        <input type="file" name="gambar" required class="form-control-file">
+                        <input type="file" name="gambar" class="form-control-file">
                     </div>
                     <div class="form-group">
                         <label for="blog">Judul</label>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="form-group">
                         <label for="blog">Tanggal</label>
-                        <input type="date" name="tanggal" id="tanggal" class="form-control" required>
+                        <input type="dates" name="tanggal" id="tanggal" class="form-control" required>
                     </div>
                     <div class="form-group float-right">
                         <input type="submit" name="add" value="Simpan" class="btn btn-success">

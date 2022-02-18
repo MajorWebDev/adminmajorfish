@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="../_asset/css/simple-sidebar.css">
 		<link rel="stylesheet" href="../_asset/font-awesome/css/font-awesome.min.css">
 		<link rel="icon" href="<?=base_url('img/logo.png')?>">
+		<script type="text/javascript" src="../_asset/ckeditor/ckeditor.js"></script>
 	</head>
 	<body>
 	<script src="../_asset/js/jquery.js"></script>

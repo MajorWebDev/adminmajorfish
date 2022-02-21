@@ -8,9 +8,9 @@
 
     <div class="box">
         <h1><?= $data["judul"]?></h1>
-        <h5>
+        <h6>
             By : <?= $data["pembuat"]?>. <small class="text-muted">Upload pada <?=$data["tanggal"]?></small>
-        </h5>
+        </h6>
         <img src="../_asset/upload_gambar/<?= $data["gambar"]?>" class="img-fluid rounded mx-auto d-block">
         <p><?= $data["isi"]?></p>
     </div>

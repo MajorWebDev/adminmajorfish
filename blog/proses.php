@@ -2,7 +2,7 @@
 require_once "../_config/config.php";
 
 if(isset($_POST['add'])) {
-    $awal = "post";
+    $rand = rand();
     $ekstensi =  array('png','jpg','jpeg','gif');
     $filename = $_FILES['gambar']['name'];
     $ukuran = $_FILES['gambar']['size'];
@@ -18,9 +18,10 @@ if(isset($_POST['add'])) {
     if(!in_array($ext,$ekstensi) ) {
         header("location:add.php?alert=gagal_ekstensi");
     }else{
-        if($ukuran < 1044070){		
-            $xx = $awal.'_'.$filename;
-            move_uploaded_file($_FILES['gambar']['tmp_name'], '../_asset/upload_gambar/'.$awal.'_'.$filename);
+        if($ukuran < 1044070){	
+            $awal = "post";	
+            $xx = $awal.'-'.$rand.'_'.$filename;
+            move_uploaded_file($_FILES['gambar']['tmp_name'], '../_asset/upload_gambar/'.$awal.'-'.$rand.'_'.$filename);
             mysqli_query($con, "INSERT INTO blog (gambar, judul, pembuat, isi, tanggal) VALUES ('$xx','$judul','$pembuat','$isi','$tanggal')") or die (mysqli_error($con));
             header("location:add.php?alert=berhasil");
         }else{

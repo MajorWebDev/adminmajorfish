@@ -4,7 +4,7 @@ if (!isset($_SESSION['user'])) {
 	echo "<script>window.location='".base_url('../auth/login.php')."';</script>";
 } 
 
-$id_ikan = $_GET["id_blog"];
+$id_blog = $_GET["id_blog"];
 $sql = "SELECT * FROM blog WHERE id_blog='$id_blog'";
 $query = mysqli_query($con, $sql) or die (mysqli_error());
 $data = mysqli_fetch_array($query);

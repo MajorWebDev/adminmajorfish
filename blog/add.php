@@ -8,6 +8,11 @@
             </div>
         </h4>
         <?php 
+
+            $tz = 'Asia/Jakarta';
+            $dt = new DateTime("now", new DateTimeZone($tz));
+            $timestamp = $dt->format('Y-m-d G:i:s');
+
             if(isset($_GET['alert'])){
                 if($_GET['alert']=='gagal_ekstensi'){
         ?>
@@ -66,7 +71,7 @@
                     </div>
                     <div class="form-group">
                         <label for="blog">Tanggal</label>
-                        <input type="date" name="tanggal" id="tanggal" class="form-control" required>
+                        <input type="text" name="tanggal" id="tanggal" value="<?=$timestamp?>" class="form-control" required readonly>
                     </div>
                     <div class="form-group float-right">
                         <input type="submit" name="add" value="Simpan" class="btn btn-success">

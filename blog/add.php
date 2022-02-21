@@ -59,7 +59,7 @@
                 <form action="proses.php" enctype="multipart/form-data" method="post">
                     <div class="form-group">
                         <label for="blog">Gambar</label>
-                        <input type="file" name="gambar" class="form-control-file">
+                        <input type="file" name="gambar" class="form-control-file" required>
                     </div>
                     <div class="form-group">
                         <label for="blog">Judul</label>

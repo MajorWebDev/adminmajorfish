@@ -54,7 +54,7 @@
                 <form action="proses.php" enctype="multipart/form-data" method="post">
                     <div class="form-group">
                         <label for="ikan">Gambar Ikan</label>
-                        <input type="file" name="gambar" required class="form-control-file">
+                        <input type="file" name="gambar" class="form-control-file" required>
                     </div>
                     <div class="form-group">
                         <label for="ikan">Kategori</label>

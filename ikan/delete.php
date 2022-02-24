@@ -1,12 +1,12 @@
 <?php
 require_once "../_config/config.php";
 if (!isset($_SESSION['user'])) {
-	echo "<script>window.location='".base_url('../auth/login.php')."';</script>";
+	echo "<script>window.location='../auth/login.php';</script>";
 } 
 
 $id_ikan = $_GET["id_ikan"];
 $sql = "SELECT * FROM ikan WHERE id_ikan='$id_ikan'";
-$query = mysqli_query($con, $sql) or die (mysqli_error());
+$query = mysqli_query($con, $sql) or die (mysqli_error($con));
 $data = mysqli_fetch_array($query);
 $patch = '../_asset/upload_gambar/'.$data['gambar'];
 

@@ -8,13 +8,4 @@
     if(mysqli_connect_errno()) {
         echo mysqli_connect_error();
     }
-    //Function Base Url
-    function base_url($url = null) {
-        $base_url = $_SERVER['SERVER_NAME'];
-        if($url != null) {
-            return $base_url."/".$url;
-        } else {
-            return $base_url;
-        }
-    }
 ?>
